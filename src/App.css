@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+ /* background-color:rgb(26, 25, 25); */
+ /* background-color: #f00; */
+}
+@keyframes flame {
+  0% {
+    text-shadow: 0 0 5px #ff6, 0 0 10px #f00, 0 0 15px #f00, 0 0 20px #f00;
+  }
+  50% {
+    text-shadow: 0 0 10px #ffa500, 0 0 20px #ff4500, 0 0 30px #ff0000;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff6, 0 0 10px #f00, 0 0 15px #f00, 0 0 20px #f00;
+  }
+}
+
+.slide-animation {
+  animation: slide-right 30s linear infinite;
+}
+
+.fire-text {
+  animation: flame 1s infinite alternate;
+  color: #2d0360;
+  font-weight: 900;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 10s linear infinite;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  animation: marquee-reverse 10s linear infinite;
+}
+
+
+
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.fwRegular{
+  font-family: SourceSansPro-Regular !important;
+}
+.fwSemibold{
+  font-family: SourceSansPro-Semibold !important;
+}
+
+.fwBold{
+  font-family: SourceSansPro-Bold !important;
+}
+
+.fsExtrabold{
+  font-family: SourceSansPro-Extra-Bold;
+}
+
+body {
+  font-family: SourceSansPro-Regular;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+body.no-scroll::-webkit-scrollbar {
+  display: none;
+
+}
+/* Stripe animation  */
+.stripes-container {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+margin-top: -6rem;
+  padding: 20px 0;
+}
+.swiper-img img{
+  color: whitesmoke;
+}
+.stripes-slider {
+  display: flex;
+  gap: 1rem;
+  animation: move-right 20s linear infinite;
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* Neural animated background */
+.bg-neural {
+  background: radial-gradient(circle, #000000 0%, #0a0a0a 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-neural::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(circle, rgba(0, 119, 255, 0.2) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: neuralMove 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes neuralMove {
+  0% { transform: rotate(0deg) translate(0, 0); }
+  50% { transform: rotate(180deg) translate(20px, 20px); }
+  100% { transform: rotate(360deg) translate(0, 0); }
+}
+
+/* Optional: force all Stripe cards to have fixed size */
+.stripes-slider > * {
+  width: 300px;
+  height: 150px;
+  flex-shrink: 0;
+}
+@media (max-width: 425px) {
+html, body {
+  height: 50%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+ /* background-color:rgb(26, 25, 25); */
+ /* background-color: greenyellow; */
+}
+.full-div{
+ display: flex;
+ text-align: center;
+  justify-content: center;
+}
+ .text-high .h1-text{
+    font-size: 35px !important;
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+ margin-top: -5rem;
+  }
+  .text-set{
+    font-size: 35px !important;
+     font-weight: 700 !important;
+  }
+  .images-container{
+      display: flex;
+ text-align: center;
+  justify-content: center !important;
+  height: 100vh !important;
+  }
+  .images-container img{
+   margin-left: -3rem !important;
+   margin-top: 10rem ;
+   height: 400px !important;
+   width: 350px !important;
+  }
+  .h1-text {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    align-items: end;
+  }
+  .fa-img {
+    position: absolute;
+    top: -6rem !important;
+    left: -25px;
+  }
+  .img-swip,img{
+    height: 70px !important;
+    width: 280px !important;
+    object-fit: cover !important;
+    background: rgb(228, 228, 230) !important;
+    border-radius: 8px !important;
+  }
+}
