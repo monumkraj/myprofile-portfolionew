@@ -25,7 +25,7 @@ function Navbar() {
         <div className="flex items-center space-x-16">
           <img
             className="h-10 rounded-full border border-green-400 shadow-md"
-            src="src/assets/img/logo.jpg"
+            src="public/logo.jpg"
             alt="Logo"
           />
 

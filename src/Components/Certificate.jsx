@@ -43,7 +43,7 @@ function Certificate() {
 
   const certificates = [
     {
-      img: "src/img/Screenshot 2025-10-06 at 16-21-55 KOD1N04ZU-Monu-1.pdf.png",
+      img: "/Screenshot 2025-10-06 at 16-21-55 KOD1N04ZU-Monu-1.pdf.png",
       title: "Java Full Stack Certificate",
     },
   ];

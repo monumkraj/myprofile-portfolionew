@@ -3,17 +3,19 @@ import BackgroundAnimation from "../Page/backgroundanimation";
 import Footer from "./Footer";
 
 function ResumeDownload() {
-  // Function to trigger download
-  const handleDownload = () => {
-    // Replace the URL below with the path to your actual resume file
-    const resumeUrl = "public/MonukumarReact-developer.pdf";
+ // Function to trigger download
+const handleDownload = () => {
+  // Use the path relative to public folder (do NOT include 'public/')
+  const resumeUrl = "/MonukumarReact-developer.pdf";
 
-    // Create a temporary link element
-    const link = document.createElement("a");
-    link.href = resumeUrl;
-    link.download = "Monu_Kumar_Resume.pdf"; // File name for download
-    link.click();
-  };
+  // Create a temporary link element
+  const link = document.createElement("a");
+  link.href = resumeUrl;
+  link.download = "MonukumarReact-developer.pdf"; // File name for download
+  document.body.appendChild(link); // Append to body
+  link.click(); // Trigger download
+  document.body.removeChild(link); // Clean up
+};
 
   return (
     <div>
