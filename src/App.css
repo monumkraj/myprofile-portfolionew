@@ -87,7 +87,11 @@ input, select, button, textarea {
   gap: 1rem;
   animation: move-right 20s linear infinite;
 }
-
+/* .image-box, .image-new{
+  height: 70vh;
+  width: 70%;
+  padding: 2%;
+} */
 @keyframes move-right {
   0% { transform: translateX(-50%); }
   100% { transform: translateX(0%); }
@@ -177,11 +181,11 @@ input, select, button, textarea {
     left: -25px;
   }
 
-  .img-swip,img {
+  /* .img-swip,img {
     height: 70px !important;
     width: 280px !important;
     object-fit: cover !important;
     background: rgb(228, 228, 230) !important;
     border-radius: 8px !important;
-  }
+  } */
 }

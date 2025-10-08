@@ -5,11 +5,11 @@ import BackgroundAnimation from './backgroundanimation';
 
 function About() {
   return (
-    <div className="font-['satoshi'] bg-transpairent text-white overflow-hidden">
+    <div className="font-['satoshi']  bg-transpairent text-white overflow-hidden">
       <BackgroundAnimation />
 
       {/* Center Wrapper */}
-      <div className="flex justify-center items-center py-8 px-4 sm:px-6 md:px-8">
+      <div className="flex  justify-center items-center py-8 px-4 sm:px-6 md:px-8">
         {/* Parent Responsive Box */}
         <div className="w-full max-w-[1400px] flex flex-col lg:flex-row items-center lg:items-start justify-between bg-gradient-to-br from-blue-700 via-blue-500 to-blue-300 rounded-xl shadow-2xl overflow-hidden">
 
@@ -30,7 +30,7 @@ function About() {
             </motion.h1>
 
             <motion.p
-              className="text-base sm:text-lg md:text-xl lg:text-2xl"
+              className="text-base sm:text-lg md:text-xl lg:text-3xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -41,7 +41,7 @@ function About() {
             </motion.p>
 
             <motion.p
-              className="text-base sm:text-lg md:text-xl lg:text-2xl"
+              className="text-base sm:text-lg md:text-xl lg:text-3xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
@@ -52,7 +52,7 @@ function About() {
             </motion.p>
 
             <motion.p
-              className="text-base sm:text-lg md:text-xl lg:text-2xl"
+              className="text-base sm:text-lg md:text-xl lg:text-3xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
@@ -62,7 +62,7 @@ function About() {
             </motion.p>
 
             <motion.ul
-              className="list-disc list-inside pl-4 space-y-1 text-base sm:text-lg md:text-xl lg:text-2xl"
+              className="list-disc list-inside pl-4 space-y-1 text-base sm:text-lg md:text-xl lg:text-3xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
@@ -72,7 +72,7 @@ function About() {
             </motion.ul>
 
             <motion.p
-              className="text-base sm:text-lg md:text-xl lg:text-2xl"
+              className="text-base sm:text-lg md:text-xl lg:text-3xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2 }}
@@ -85,10 +85,10 @@ function About() {
           </motion.div>
 
           {/* ---------- IMAGE BOX ---------- */}
-          <div className="w-full lg:w-1/2 flex justify-center items-center p-6">
+          <div className="w-full image-box lg:w-1/2 flex justify-center items-center p-6">
             <img
-              className="w-[85%] sm:w-[70%] md:w-[60%] lg:w-[80%] xl:w-[70%] rounded-2xl shadow-2xl object-cover"
-              src="src/assets/img/mk.jpg"
+              className="image-new w-[85%] sm:w-[100%] md:w-[80%] lg:w-[100%] xl:w-[70%] rounded-2xl shadow-2xl object-cover"
+              src="./mk.jpg"
               alt="Monu Kumar"
             />
           </div>
