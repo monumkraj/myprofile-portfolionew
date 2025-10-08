@@ -10,7 +10,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Page/Home';
 import About from './Page/About';
-import Project from './Page/Project';   // ✅ Fixed capitalization
+import Project from './Page/Project';
 import ResumeDownload from './Components/ResumeDawonload';
 import Certificate from './Components/Certificate';
 
